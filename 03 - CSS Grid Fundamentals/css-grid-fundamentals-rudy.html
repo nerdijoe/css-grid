@@ -5,19 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/style.css">
-  <title>Starter Files and Tooling Setup!</title>
+  <title>CSS Grid Fundamentals!</title>
 </head>
 
-<style>
-  p {
-    font-size: 50px;
-    border-bottom: 10px solid var(--yellow);
-    color: var(--black);
-  }
-</style>
-
 <body>
-  <p>Hello!</p>
   <div class="container">
     <div class="item">1</div>
     <div class="item">2</div>
@@ -30,7 +21,15 @@
     <div class="item">9</div>
     <div class="item">10</div>
   </div>
-  
+
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: auto 100px 200px 100px;
+      grid-template-rows: 100px 200px 300px;
+      grid-gap: 10px;
+    }
+  </style>
 </body>
 
 </html>
